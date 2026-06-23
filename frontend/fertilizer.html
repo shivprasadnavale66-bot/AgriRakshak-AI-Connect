@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Fertilizer Recommendation</h1>
+
+    <form id="fertilizerForm">
+
+        <label>Crop</label><br>
+        <input type="text" id="crop" required><br><br>
+
+        <label>Soil Type</label><br>
+        <input type="text" id="soilType" required><br><br>
+
+        <label>Nitrogen (N)</label><br>
+        <input type="number" id="nitrogen" required><br><br>
+
+        <label>Phosphorus (P)</label><br>
+        <input type="number" id="phosphorus" required><br><br>
+
+        <label>Potassium (K)</label><br>
+        <input type="number" id="potassium" required><br><br>
+
+        <button type="submit" class="btn">
+            Get Recommendation
+        </button>
+
+    </form>
+
+    <br>
+
+    <h3>Recommendation</h3>
+
+    <div id="result"></div>
+
+    <br>
+
+    <h3>Recommendation History</h3>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Crop</th>
+                <th>Soil</th>
+                <th>N</th>
+                <th>P</th>
+                <th>K</th>
+                <th>Recommendation</th>
+            </tr>
+        </thead>
+
+        <tbody id="historyBody"></tbody>
+    </table>
+
+    <br>
+
+    <button class="btn" onclick="location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+
+    <script src="js/fertilizer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Crop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h2>Edit Crop</h2>
+
+    <form id="editCropForm">
+
+        <label>Select Farmer</label><br>
+        <select id="farmer" required>
+            <option value="">-- Select Farmer --</option>
+        </select>
+
+        <br><br>
+
+        <label>Crop Name</label><br>
+        <input type="text" id="cropName" required>
+
+        <br><br>
+
+        <label>Crop Type</label><br>
+        <input type="text" id="cropType" required>
+
+        <br><br>
+
+        <label>Season</label><br>
+        <select id="season" required>
+            <option value="">-- Select Season --</option>
+            <option value="Kharif">Kharif</option>
+            <option value="Rabi">Rabi</option>
+            <option value="Zaid">Zaid</option>
+        </select>
+
+        <br><br>
+
+        <label>Area (Acres)</label><br>
+        <input type="number" id="area" step="0.01" required>
+
+        <br><br>
+
+        <label>Soil Type</label><br>
+        <input type="text" id="soilType" required>
+
+        <br><br>
+
+        <button type="submit" class="btn">
+            Update Crop
+        </button>
+
+    </form>
+
+    <br>
+
+    <button class="btn" onclick="location.href='view-crops.html'">
+        Back
+    </button>
+
+    <script src="js/edit-crop.js"></script>
+
+</body>
+
+</html>

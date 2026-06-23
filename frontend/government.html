@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>🏛️ Add Government Scheme</h2>
+
+<form id="schemeForm">
+
+    <input
+        type="text"
+        id="schemeName"
+        placeholder="Scheme Name"
+        required>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="state"
+        placeholder="State"
+        required>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="category"
+        placeholder="Category"
+        required>
+
+    <br><br>
+
+    <textarea
+        id="eligibility"
+        placeholder="Eligibility"
+        rows="4"
+        cols="40"
+        required></textarea>
+
+    <br><br>
+
+    <textarea
+        id="benefits"
+        placeholder="Benefits"
+        rows="4"
+        cols="40"
+        required></textarea>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="applyLink"
+        placeholder="Application Link">
+
+    <br><br>
+
+    <button class="btn" type="submit">
+        Save Scheme
+    </button>
+
+</form>
+
+<br>
+
+<button class="btn"
+onclick="location.href='view-schemes.html'">
+View Schemes
+</button>
+
+<script src="js/government.js"></script>
+
+</body>
+</html>

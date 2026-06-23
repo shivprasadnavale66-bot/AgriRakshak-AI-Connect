@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriRakshak Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="header">
+
+        <div>
+            <h1>🌾 AgriRakshak Dashboard</h1>
+            <p id="welcome"></p>
+            <small id="currentDateTime"></small>
+        </div>
+
+        <button class="btn logout-btn" onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+
+    <!-- ================= WELCOME ================= -->
+
+    <div class="card">
+
+        <h2>👋 Welcome to AgriRakshak</h2>
+
+        <p>
+            Manage Farmers, Crops, Weather, Market Prices,
+            Fertilizer Recommendations and Government Schemes
+            from one dashboard.
+        </p>
+
+    </div>
+
+    <br>
+
+    <!-- ================= USER DETAILS ================= -->
+
+    <h2>👤 User Details</h2>
+
+    <div class="user-details">
+
+        <div class="user-box">
+            <strong>👤 Full Name</strong>
+            <br><br>
+            <span id="fullName"></span>
+        </div>
+
+        <div class="user-box">
+            <strong>📧 Email</strong>
+            <br><br>
+            <span id="email"></span>
+        </div>
+
+        <div class="user-box">
+            <strong>🛡 Role</strong>
+            <br><br>
+            <span id="role"></span>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= ANALYTICS ================= -->
+
+    <h2>📊 Dashboard Analytics</h2>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>👨‍🌾 Farmers</h3>
+            <h1 id="farmerCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Crops</h3>
+            <h1 id="cropCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>💰 Markets</h3>
+            <h1 id="marketCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>🏛 Government Schemes</h3>
+            <h1 id="schemeCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>👥 Users</h3>
+            <h1 id="userCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>🧪 Fertilizers</h3>
+            <h1 id="fertilizerCount">0</h1>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= DASHBOARD CHARTS ================= -->
+
+    <h2>📈 Dashboard Analytics Charts</h2>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+
+            <h3>📊 Bar Chart</h3>
+
+            <div class="chart-container">
+                <canvas id="dashboardChart"></canvas>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🥧 Pie Chart</h3>
+
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📈 Line Chart</h3>
+
+            <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= RECENT ACTIVITIES ================= -->
+
+    <h2>🕒 Recent Activities</h2>
+
+    <div class="card">
+
+        <ul id="recentActivities">
+            <li>✅ Dashboard Loaded Successfully</li>
+            <li>👤 User Logged In Successfully</li>
+            <li>📊 Dashboard Analytics Loaded</li>
+            <li>🌾 Farmer Module Ready</li>
+            <li>🌱 Crop Module Ready</li>
+            <li>🌦 Weather Module Ready</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= SYSTEM STATUS ================= -->
+
+    <h2>⚡ System Status</h2>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>🟢 Backend</h3>
+            <h1>✔</h1>
+            <p>Connected</p>
+        </div>
+
+        <div class="card">
+            <h3>🗄 Database</h3>
+            <h1>✔</h1>
+            <p>Connected</p>
+        </div>
+
+        <div class="card">
+            <h3>🔐 Authentication</h3>
+            <h1>✔</h1>
+            <p>JWT Active</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 API</h3>
+            <h1>✔</h1>
+            <p>Running</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= QUICK ACTIONS ================= -->
+     
+<div class="card">
+
+    <h3>📊 Analytics</h3>
+
+    <p>View detailed analytics reports.</p>
+
+    <button class="btn" onclick="location.href='analytics.html'">
+        📊 Open Analytics
+    </button>
+
+</div>
+    <h2>🚀 Quick Actions</h2>
+
+    <div class="dashboard-cards">
+                <div class="card">
+
+            <h3>👨‍🌾 Farmer Management</h3>
+
+            <p>Add and manage farmers using the Farmer Module.</p>
+
+            <button class="btn" onclick="location.href='farmer.html'">
+                ➕ Add Farmer
+            </button>
+
+            <button class="btn" onclick="location.href='view-farmers.html'">
+                📋 View Farmers
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌱 Crop Management</h3>
+
+            <p>Manage crop information and recommendations.</p>
+
+            <button class="btn" onclick="location.href='crop.html'">
+                🌱 Open Module
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌦 Weather Forecast</h3>
+
+            <p>Check live weather information.</p>
+
+            <button class="btn" onclick="location.href='weather.html'">
+                🌦 Open Module
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💰 Market Prices</h3>
+
+            <p>View latest crop market prices.</p>
+
+            <button class="btn" onclick="location.href='market.html'">
+                💰 Open Module
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🧪 Fertilizer Recommendation</h3>
+
+            <p>Get fertilizer recommendations for crops.</p>
+
+            <button class="btn" onclick="location.href='fertilizer.html'">
+                🧪 Open Module
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🏛 Government Schemes</h3>
+
+            <p>Explore and manage government schemes.</p>
+
+            <button class="btn" onclick="location.href='government.html'">
+                🏛 Open
+            </button>
+
+            <button class="btn" onclick="location.href='view-schemes.html'">
+                📋 View Schemes
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🤖 AI Chatbot</h3>
+
+            <p>Ask farming-related questions using AI.</p>
+
+            <button class="btn" onclick="location.href='chatbot.html'">
+                🤖 Chat Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+        <p>© 2026 AgriRakshak | Final Year Project</p>
+    </footer>
+
+    <!-- ================= DATE & TIME ================= -->
+
+    <script>
+        function updateDateTime() {
+            document.getElementById("currentDateTime").innerHTML =
+                new Date().toLocaleString();
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+
+    <!-- ================= DASHBOARD SCRIPT ================= -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

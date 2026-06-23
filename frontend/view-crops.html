@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Crops</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h2>Crop List</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Crop..."
+        onkeyup="searchCrop()"
+    >
+
+    <br><br>
+
+    <table border="1" width="100%" cellspacing="0" cellpadding="10">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Farmer</th>
+                <th>Crop Name</th>
+                <th>Crop Type</th>
+                <th>Season</th>
+                <th>Area</th>
+                <th>Soil Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="cropTableBody">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button class="btn" onclick="location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+
+    <script src="js/view-crops.js"></script>
+
+</body>
+
+</html>

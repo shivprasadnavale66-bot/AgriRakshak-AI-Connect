@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="card">
+
+    <h3>🌱 Crop Management</h3>
+
+    <p>Manage crop information.</p>
+
+    <button class="btn" onclick="location.href='crop.html'">
+        ➕ Add Crop
+    </button>
+
+    <button class="btn" onclick="location.href='view-crops.html'">
+        📋 View Crops
+    </button>
+
+</div>
+    <h1>Crop Management</h1>
+
+    <form id="cropForm">
+
+        <input type="hidden" id="cropId">
+
+        <label>Crop Name</label><br>
+        <input type="text" id="cropName" required><br><br>
+
+        <label>Crop Type</label><br>
+        <input type="text" id="cropType" required><br><br>
+
+        <label>Season</label><br>
+        <input type="text" id="season" required><br><br>
+
+        <label>Area (Acres)</label><br>
+        <input type="number" id="area" required><br><br>
+
+        <label>Soil Type</label><br>
+        <input type="text" id="soilType" required><br><br>
+
+        <button type="submit" class="btn">Save Crop</button>
+
+    </form>
+
+    <br>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Season</th>
+                <th>Area</th>
+                <th>Soil</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="cropTableBody">
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <button class="btn" onclick="location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+
+    <script src="js/crop.js"></script>
+
+</body>
+
+</html>

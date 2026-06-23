@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farmers List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h2>Farmers List</h2>
+
+    <input type="text"
+           id="search"
+           placeholder="Search..."
+           onkeyup="searchFarmer()">
+
+    <br><br>
+
+    <table border="1" cellpadding="10">
+
+        <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Village</th>
+            <th>District</th>
+            <th>State</th>
+            <th>Mobile</th>
+            <th>Land Area</th>
+            <th>Soil Type</th>
+            <th>Water Source</th>
+            <th>Action</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="farmerTableBody">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button onclick="location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+
+    <script src="js/view-farmers.js"></script>
+
+</body>
+</html>

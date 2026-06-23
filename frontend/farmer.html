@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Farmer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h2>Add Farmer</h2>
+
+<form id="farmerForm">
+
+    <label>Full Name</label><br>
+    <input type="text" id="fullName" required><br><br>
+
+    <label>Village</label><br>
+    <input type="text" id="village" required><br><br>
+
+    <label>District</label><br>
+    <input type="text" id="district" required><br><br>
+
+    <label>State</label><br>
+    <input type="text" id="state" required><br><br>
+
+    <label>Mobile Number</label><br>
+    <input type="text" id="mobileNumber" required><br><br>
+
+    <label>Land Area (Acres)</label><br>
+    <input type="number" step="0.01" id="landArea"><br><br>
+
+    <label>Soil Type</label><br>
+    <input type="text" id="soilType"><br><br>
+
+    <label>Water Source</label><br>
+    <input type="text" id="waterSource"><br><br>
+
+    <button type="submit" class="btn">
+        Save Farmer
+    </button>
+
+</form>
+
+<br>
+
+<button class="btn" onclick="location.href='dashboard.html'">
+    Back to Dashboard
+</button>
+
+<script src="js/farmer.js"></script>
+
+</body>
+</html>

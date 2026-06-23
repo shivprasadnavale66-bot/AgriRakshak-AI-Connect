@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Prices</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/market.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>🌾 Market Prices</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="crop"
+                placeholder="Enter crop name (e.g. Cotton, Wheat, Rice)">
+
+            <button onclick="searchCrop()">
+                Search
+            </button>
+
+            <button onclick="loadAllPrices()">
+                View All
+            </button>
+
+        </div>
+
+        <table id="marketTable">
+
+            <thead>
+                <tr>
+                    <th>Crop</th>
+                    <th>State</th>
+                    <th>District</th>
+                    <th>Market</th>
+                    <th>Min Price</th>
+                    <th>Max Price</th>
+                    <th>Modal Price</th>
+                    <th>Updated</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <button class="btn" onclick="location.href='dashboard.html'">
+            ← Back to Dashboard
+        </button>
+
+    </div>
+
+    <script src="js/market.js"></script>
+
+</body>
+
+</html>
