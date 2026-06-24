@@ -36,23 +36,24 @@ public class SecurityConfig {
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(
-                                "/api/auth/**",
-                                "/api/weather/**",
-                                "/api/market/**",
-                                "/api/farmer/**",
-                                "/api/crops/**",
-                                "/api/disease/**",
-                                "/api/chatbot/**",
-                                "/api/fertilizer/**",
-                                "/api/schemes/**",
-                                "/api/dashboard/**",
-                                "/uploads/**"
-                        ).permitAll()
+        .requestMatchers(
+                "/",                  // Allow homepage
+                "/health",            // Allow health check
+                "/api/auth/**",
+                "/api/weather/**",
+                "/api/market/**",
+                "/api/farmer/**",
+                "/api/crops/**",
+                "/api/disease/**",
+                "/api/chatbot/**",
+                "/api/fertilizer/**",
+                "/api/schemes/**",
+                "/api/dashboard/**",
+                "/uploads/**"
+        ).permitAll()
 
-                        .anyRequest().authenticated()
-                )
-
+        .anyRequest().authenticated()
+)
                 .addFilterBefore(
                         jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class
