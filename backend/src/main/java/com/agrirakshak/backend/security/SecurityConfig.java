@@ -36,24 +36,25 @@ public class SecurityConfig {
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
                 .authorizeHttpRequests(auth -> auth
-        .requestMatchers(
-                "/",                  // Allow homepage
-                "/health",            // Allow health check
-                "/api/auth/**",
-                "/api/weather/**",
-                "/api/market/**",
-                "/api/farmer/**",
-                "/api/crops/**",
-                "/api/disease/**",
-                "/api/chatbot/**",
-                "/api/fertilizer/**",
-                "/api/schemes/**",
-                "/api/dashboard/**",
-                "/uploads/**"
-        ).permitAll()
+                        .requestMatchers(
+                                "/",
+                                "/health",
+                                "/api/auth/**",
+                                "/api/weather/**",
+                                "/api/market/**",
+                                "/api/farmer/**",
+                                "/api/crops/**",
+                                "/api/disease/**",
+                                "/api/chatbot/**",
+                                "/api/fertilizer/**",
+                                "/api/schemes/**",
+                                "/api/dashboard/**",
+                                "/uploads/**"
+                        ).permitAll()
 
-        .anyRequest().authenticated()
-)
+                        .anyRequest().authenticated()
+                )
+
                 .addFilterBefore(
                         jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class
@@ -69,7 +70,8 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5500",
-                "http://127.0.0.1:5500"
+                "http://127.0.0.1:5500",
+                "https://agrirakshak-frontend-zqte.onrender.com"
         ));
 
         configuration.setAllowedMethods(List.of(
