@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/chatbot/ask";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/chatbot/ask";
 
 async function sendMessage() {
 
@@ -66,4 +66,5 @@ document.getElementById("message").addEventListener("keypress", function (event)
     }
 
 });
+
 

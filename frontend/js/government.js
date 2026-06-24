@@ -1,4 +1,4 @@
-const BASE_URL = "https://agrirakshak-backend.onrender.com/api/schemes";
+const BASE_URL = "https://agrirakshak-backend-gosk.onrender.com/api/schemes";
 
 document.getElementById("schemeForm")
 .addEventListener("submit", async function(e){
@@ -41,4 +41,5 @@ document.getElementById("schemeForm")
     }
 
 });
+
 

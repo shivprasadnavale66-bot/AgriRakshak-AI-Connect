@@ -19,7 +19,7 @@ async function saveFarmer(event) {
 
     try {
 
-        const response = await fetch("https://agrirakshak-backend.onrender.com/api/farmer", {
+        const response = await fetch("https://agrirakshak-backend-gosk.onrender.com/api/farmer", {
 
             method: "POST",
 
@@ -56,4 +56,5 @@ async function saveFarmer(event) {
     }
 
 }
+
 

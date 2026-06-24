@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/farmer";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/farmer";
 
 const farmerId = new URLSearchParams(window.location.search).get("id");
 
@@ -105,4 +105,5 @@ async function updateFarmer(e) {
     }
 
 }
+
 

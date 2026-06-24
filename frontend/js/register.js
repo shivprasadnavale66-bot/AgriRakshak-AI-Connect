@@ -18,7 +18,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     try {
         const response = await fetch(
-            "https://agrirakshak-backend.onrender.com/api/auth/register",
+            "https://agrirakshak-backend-gosk.onrender.com/api/auth/register",
             {
                 method: "POST",
                 headers: {
@@ -52,4 +52,5 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         alert("Fetch Error:\n" + error);
     }
 });
+
 

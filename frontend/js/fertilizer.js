@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/fertilizer";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/fertilizer";
 
 const fertilizerForm = document.getElementById("fertilizerForm");
 const result = document.getElementById("result");
@@ -68,4 +68,5 @@ function loadHistory() {
             console.error(error);
         });
 }
+
 

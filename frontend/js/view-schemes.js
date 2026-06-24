@@ -1,4 +1,4 @@
-const BASE_URL = "https://agrirakshak-backend.onrender.com/api/schemes";
+const BASE_URL = "https://agrirakshak-backend-gosk.onrender.com/api/schemes";
 
 async function loadSchemes(){
 
@@ -45,4 +45,5 @@ async function loadSchemes(){
 }
 
 loadSchemes();
+
 

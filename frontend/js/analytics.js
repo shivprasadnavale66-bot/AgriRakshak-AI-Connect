@@ -5,7 +5,7 @@ if (!token) {
     window.location.href = "login.html";
 }
 
-fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
+fetch("https://agrirakshak-backend-gosk.onrender.com/api/dashboard/analytics", {
     method: "GET",
     headers: {
         "Authorization": "Bearer " + token
@@ -29,4 +29,5 @@ fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
     console.error(error);
     alert("Unable to load analytics.");
 });
+
 

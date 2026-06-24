@@ -6,7 +6,7 @@ async function loadFarmers() {
 
     try {
 
-        const response = await fetch("https://agrirakshak-backend.onrender.com/api/farmer");
+        const response = await fetch("https://agrirakshak-backend-gosk.onrender.com/api/farmer");
 
         if (!response.ok) {
             throw new Error("Failed to fetch farmers");
@@ -122,7 +122,7 @@ async function deleteFarmer(id) {
     try {
 
         const response = await fetch(
-            `https://agrirakshak-backend.onrender.com/api/farmer/${id}`,
+            `https://agrirakshak-backend-gosk.onrender.com/api/farmer/${id}`,
             {
                 method: "DELETE"
             }
@@ -143,4 +143,5 @@ async function deleteFarmer(id) {
     }
 
 }
+
 

@@ -1,5 +1,5 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/crops";
-const FARMER_API = "https://agrirakshak-backend.onrender.com/api/farmer";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/crops";
+const FARMER_API = "https://agrirakshak-backend-gosk.onrender.com/api/farmer";
 
 const cropId = new URLSearchParams(window.location.search).get("id");
 
@@ -133,4 +133,5 @@ async function updateCrop(event) {
     }
 
 }
+
 

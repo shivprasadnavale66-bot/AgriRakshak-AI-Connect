@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://agrirakshak-backend.onrender.com/api",
+  baseURL: "https://agrirakshak-backend-gosk.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
@@ -21,4 +21,5 @@ API.interceptors.request.use(
 );
 
 export default API;
+
 

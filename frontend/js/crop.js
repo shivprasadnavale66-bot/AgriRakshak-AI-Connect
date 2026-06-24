@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/crops";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/crops";
 
 const cropForm = document.getElementById("cropForm");
 const cropTableBody = document.getElementById("cropTableBody");
@@ -109,4 +109,5 @@ function deleteCrop(id) {
         loadCrops();
     });
 }
+
 

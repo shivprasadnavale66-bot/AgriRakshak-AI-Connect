@@ -172,7 +172,7 @@ function loadChart(data) {
 
 function loadDashboardAnalytics() {
 
-    fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
+    fetch("https://agrirakshak-backend-gosk.onrender.com/api/dashboard/analytics", {
 
         method: "GET",
 
@@ -254,4 +254,5 @@ function logout() {
 // ==============================
 
 loadDashboardAnalytics();
+
 

@@ -6,7 +6,7 @@ async function loadCrops() {
 
     try {
 
-        const response = await fetch("https://agrirakshak-backend.onrender.com/api/crops");
+        const response = await fetch("https://agrirakshak-backend-gosk.onrender.com/api/crops");
 
         if (!response.ok) {
             throw new Error("Failed to fetch crops");
@@ -109,7 +109,7 @@ async function deleteCrop(id) {
 
     try {
 
-        const response = await fetch(`https://agrirakshak-backend.onrender.com/api/crops/${id}`, {
+        const response = await fetch(`https://agrirakshak-backend-gosk.onrender.com/api/crops/${id}`, {
             method: "DELETE"
         });
 
@@ -136,4 +136,5 @@ async function deleteCrop(id) {
     }
 
 }
+
 

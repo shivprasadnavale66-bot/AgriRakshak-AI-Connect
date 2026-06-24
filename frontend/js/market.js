@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/market";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/market";
 
 window.onload = function () {
     loadAllPrices();
@@ -94,4 +94,5 @@ document.getElementById("crop").addEventListener("keypress", function (event) {
         searchCrop();
     }
 });
+
 

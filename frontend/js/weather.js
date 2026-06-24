@@ -1,4 +1,4 @@
-const API_URL = "https://agrirakshak-backend.onrender.com/api/weather/";
+const API_URL = "https://agrirakshak-backend-gosk.onrender.com/api/weather/";
 
 async function getWeather() {
 
@@ -44,4 +44,5 @@ document.getElementById("city").addEventListener("keypress", function (event) {
         getWeather();
     }
 });
+
 
