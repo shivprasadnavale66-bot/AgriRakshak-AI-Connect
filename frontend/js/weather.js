@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/weather/";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/weather/";
 
 async function getWeather() {
 

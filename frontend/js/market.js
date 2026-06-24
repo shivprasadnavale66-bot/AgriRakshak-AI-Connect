@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/market";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/market";
 
 window.onload = function () {
     loadAllPrices();

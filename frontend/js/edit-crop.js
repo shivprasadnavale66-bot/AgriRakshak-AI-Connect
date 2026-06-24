@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8080/api/crops";
-const FARMER_API = "http://localhost:8080/api/farmer";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/crops";
+const FARMER_API = "https://agrirakshak-backend.onrender.com/api/farmer";
 
 const cropId = new URLSearchParams(window.location.search).get("id");
 

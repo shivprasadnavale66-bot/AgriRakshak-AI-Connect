@@ -5,7 +5,7 @@ if (!token) {
     window.location.href = "login.html";
 }
 
-fetch("http://localhost:8080/api/dashboard/analytics", {
+fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
     method: "GET",
     headers: {
         "Authorization": "Bearer " + token

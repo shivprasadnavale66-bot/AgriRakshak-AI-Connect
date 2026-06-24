@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/farmer";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/farmer";
 
 const farmerId = new URLSearchParams(window.location.search).get("id");
 

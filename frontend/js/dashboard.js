@@ -172,7 +172,7 @@ function loadChart(data) {
 
 function loadDashboardAnalytics() {
 
-    fetch("http://localhost:8080/api/dashboard/analytics", {
+    fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
 
         method: "GET",
 

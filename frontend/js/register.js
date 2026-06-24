@@ -17,37 +17,38 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     };
 
     try {
-        const response = await fetch("http://localhost:8080/api/auth/register", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(user)
-        });
+        const response = await fetch(
+            "https://agrirakshak-backend.onrender.com/api/auth/register",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            }
+        );
 
         console.log("Response Status:", response.status);
 
         const data = await response.json();
+
         console.log("Response Data:", data);
 
-        if (data.success) {
+        if (response.ok) {
             message.style.color = "green";
-            message.innerHTML = data.message;
+            message.innerHTML = data.message || "Registration Successful";
 
             setTimeout(() => {
                 window.location.href = "login.html";
             }, 1500);
         } else {
             message.style.color = "red";
-            message.innerHTML = data.message;
+            message.innerHTML = data.message || "Registration Failed";
         }
-
     } catch (error) {
         console.error("Fetch Error:", error);
-
         message.style.color = "red";
         message.innerHTML = "Cannot connect to Backend";
-
         alert("Fetch Error:\n" + error);
     }
 });

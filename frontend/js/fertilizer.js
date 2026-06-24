@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/fertilizer";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/fertilizer";
 
 const fertilizerForm = document.getElementById("fertilizerForm");
 const result = document.getElementById("result");

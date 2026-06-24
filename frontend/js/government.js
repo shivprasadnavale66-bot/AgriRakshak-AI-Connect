@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api/schemes";
+const BASE_URL = "https://agrirakshak-backend.onrender.com/api/schemes";
 
 document.getElementById("schemeForm")
 .addEventListener("submit", async function(e){

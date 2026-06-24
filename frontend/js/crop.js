@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/crops";
+const API_URL = "https://agrirakshak-backend.onrender.com/api/crops";
 
 const cropForm = document.getElementById("cropForm");
 const cropTableBody = document.getElementById("cropTableBody");
