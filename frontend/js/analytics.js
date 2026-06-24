@@ -29,3 +29,4 @@ fetch("https://agrirakshak-backend.onrender.com/api/dashboard/analytics", {
     console.error(error);
     alert("Unable to load analytics.");
 });
+

@@ -52,3 +52,4 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         alert("Fetch Error:\n" + error);
     }
 });
+

@@ -94,3 +94,4 @@ document.getElementById("crop").addEventListener("keypress", function (event) {
         searchCrop();
     }
 });
+

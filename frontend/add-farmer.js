@@ -45,3 +45,4 @@ document.getElementById("farmerForm").addEventListener("submit", async function(
     }
 
 });
+

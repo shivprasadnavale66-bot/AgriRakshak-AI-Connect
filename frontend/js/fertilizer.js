@@ -68,3 +68,4 @@ function loadHistory() {
             console.error(error);
         });
 }
+

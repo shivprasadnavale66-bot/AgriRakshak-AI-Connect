@@ -44,3 +44,4 @@ document.getElementById("city").addEventListener("keypress", function (event) {
         getWeather();
     }
 });
+

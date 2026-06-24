@@ -109,3 +109,4 @@ function deleteCrop(id) {
         loadCrops();
     });
 }
+
